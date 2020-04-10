@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f1ef;
+    width: 100%;
+    height: 100%;
+  }
+ 
+
+  #wrap {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 60%;
+    margin: 0;
+
+  }
+  button {
+    /*position: relative;
+    display: block;*/
+    width: 200px;
+    height: 5em;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border-radius: 10px;
+    z-index: 5;
+  }
+
+  #pink {
+    background: #e47ad6;
+    position:absolute;
+    bottom: 0;
+    /*left: 50%;
+    transform: translate(-50%);*/
+    left: 0;
+  
+    
+  }
+
+  #blue {
+    background: #84d2f6;
+    position: absolute;
+    bottom: 0;
+    /*left: 50%;
+    transform: translate(-50%);*/
+    right: 0;
+
+  }
+
+
+#karl {
+  position: relative;
+  /*overflow: hidden;*/
+  top: 0;
+  height: 310px;
+  width: auto;
+}
+
+  #karl-one {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    mix-blend-mode: multiply;
+    display: inline-block;
+  }
+
+  #karl-two {
+    position: absolute;
+    bottom: 5%;
+    left: 52%;
+    transform: translate(-52%);
+    z-index: 1;
+    mix-blend-mode: multiply;
+    display: inline-block;
+    
+
+  }
+  
+  #circle {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    z-index: 0;
+    mix-blend-mode: multiply;
+
+  }
+
+
+
+
+  .ripple {
+    position: absolute;
+    background: rgba(0,0,0,.15);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    pointer-events: none;
+  }
+  .ripple.show {
+    -webkit-animation: ripple .75s ease-out;
+            animation: ripple .75s ease-out;
+  }
+  @-webkit-keyframes ripple {
+    to {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      opacity: 0;
+    }
+  }
+  @keyframes ripple {
+    to {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      opacity: 0;
+    }
+  }
